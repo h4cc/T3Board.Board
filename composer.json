@@ -1,7 +1,7 @@
 {
     "name": "t3board/board",
     "type": "typo3-flow-package",
-    "description": "",
+    "description": "this is a test",
     "require": {
         "typo3/flow": "*"
     },
