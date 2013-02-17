@@ -1,0 +1,13 @@
+{
+    "name": "t3board/board",
+    "type": "typo3-flow-package",
+    "description": "",
+    "require": {
+        "typo3/flow": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "T3Board\\Board": "Classes"
+        }
+    }
+}
