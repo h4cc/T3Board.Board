@@ -6,7 +6,6 @@ before_script:
   - rm -rf !(composer.json.dist|.travis.yml)
   - mv composer.json.dist composer.json
   - composer install --dev
-  - sed -i '/Subroutes from the Welcome package/,+12d' Configuration/Routes.yaml
 
 script:
   - phpunit -c Packages/Application/T3Board.Board/Tests/Unit.xml
