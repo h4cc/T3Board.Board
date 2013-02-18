@@ -3,9 +3,8 @@ php:
   - 5.4
 
 before_script:
-  - rm -rf !(composer.json|.travis.yml)
-  - sed -i '2,3d' composer.json
-  - composer require t3board/board:*
+  - rm -rf !(composer.json.dist|.travis.yml)
+  - mv composer.json.dist composer.json
   - composer install --dev
   - sed -i '/Subroutes from the Welcome package/,+12d' Configuration/Routes.yaml
 
